@@ -1,6 +1,4 @@
-a:hover{
-    color:red
-}
+
 .modificar{
     margin-top: 15px;
     width: 100;
@@ -36,4 +34,10 @@ a:hover{
     padding: 12px;
     border-radius: 4px;
 
+}
+.mudarletra{
+    font-size: 45px;
+}
+.mudarletra:hover{
+    color:red;
 }
