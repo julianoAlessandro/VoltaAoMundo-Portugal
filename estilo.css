@@ -9,9 +9,7 @@
    
 
 }
-li:hover{
-    color:red;
-}
+
 
 .conteudo{
     display: flex;
@@ -30,6 +28,15 @@ li:hover{
     height: 70;
     margin-top: 11px;
 
+
+}
+.conteudoPrato{
+    border: 3px solid black; /* Define a largura, estilo e cor da borda */
+
+    background-color: darkgray;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
 
 }
 
@@ -63,4 +70,112 @@ li:hover{
 }
 .treino4{
     background-color: gray;
+}
+.centralizando{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ajustarVideo{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    flex-direction: row-reverse;
+    
+}
+.textoArquitetura{
+    color:red;
+}
+.mudarletracoloracao{
+    color: brown;
+}
+.video{
+    width: 70vw;
+    height: 60vh;
+    border-radius: 6px;
+}
+.h1arquitetura{
+    text-align: center;
+}
+.textoarquitetura{
+    width: 94vw;
+    display: flex;
+    justify-content: center;
+   
+    margin-top: 8px;
+}
+.controlandoImagem{
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+.titulo2{
+    margin-top: 8px;
+}
+.conteudoCard{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.corpoModifica{
+    background-image: url('img/ArquiteturaPortugal.webp');
+    background-size: cover; /* Isso ajusta a imagem para cobrir todo o fundo */
+    background-repeat: no-repeat; /* Isso impede a repetição da imagem de fundo */
+    background-attachment: fixed; 
+}
+.carde:hover{
+    transform: scale(1);
+}
+
+.cristano2{
+  
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    height: 60vh;
+    align-items: center;
+    margin-right: 8px;
+}
+.imagem3{
+       display: flex;
+    justify-content: center;
+    
+}
+.cristianoDIV{
+    border: 6px solid black; /* Define a largura, estilo e cor da borda */
+    padding: 20px; 
+    margin-top: 5%;
+    background-color: darkgray;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+   
+}
+.divConquista{
+  
+    width: 80vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modificarImagem:hover{
+    width: 800px; /* Largura inicial da imagem */
+    transition: width 0.3s
+}
+.corpo6{
+    background-image: url('img/BandeiraFinal.jpg'); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Fixa a imagem de fundo para que ela não role com a página */
+    
 }
