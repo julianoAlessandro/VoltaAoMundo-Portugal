@@ -5,7 +5,6 @@ Atividade realizada  para a  apresentação da prova no dia 26/09.
 ## Título do Projeto: *Volta ao mundo Portugal*
 
 <img src = "https://github.com/julianoAlessandro/VoltaAoMundo-Portugal/assets/111141842/922f6014-5a70-4cc0-8554-c22f85f5a0b4">
-##LINK DO PROJETO:
 <a href = "https://julianoalessandro.github.io/VoltaAoMundo-Portugal/">SITE</a>
 Projeto realizado para contemplar todos os conhecimentos aprendidos ao longo das aulas do Professor Junior, tendo os seguintes objetivos:
 - Colocar em prática os conhecimentos aprendidos sobre Bootstrap.
