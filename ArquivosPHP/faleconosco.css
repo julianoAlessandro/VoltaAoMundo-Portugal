@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+     
+        background-image: url('C:/xampp/htdocs/ProvaEstudando1011/img/bandeira2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* Isso faz a imagem de fundo ficar fixa ao rolar a página */
+        background-position: center center; /* Isso centraliza a imagem de fundo */
+    
+    
+
+}
+.entrada{
+    width: 150px;
+    margin:8px;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: none;
+    background-color:black;
+    opacity: 0.9;
+    color:white;
+
+}
+label{
+    color:white;
+}
+
+.botaoenviar{
+ 
+    background-color:gray;
+    color:white;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: point;
+    margin-bottom: 4%;
+    padding: 6px;
+    width: 32%;
+
+}
+h3{
+    text-align: center;
+    color:white;
+}
+.centralizar{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+ 
+
+}
+fieldset{
+    background-color: black;
+    padding: 20px;
+    opacity: 0.9;
+    margin: 22px;
+}
+.central2{
+   
+    display: flex;
+    justify-content: center;
+}
