@@ -8,6 +8,6 @@
 </head>
 <body>
     <h1>Permissão negada !</h1>
-    <a href="LoginPortugal.html">clique aqui para fazer login</a>
+    <a href="LoginPortugal.php">clique aqui para fazer login</a>
 </body>
 </html>

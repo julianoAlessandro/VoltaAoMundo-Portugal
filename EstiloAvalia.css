@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background-image: url('img/formulario.jpg'); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Fixa a imagem de fundo para que ela não role com a página */
+    
+
+
+    
+}
+.input{
+     width: 100px;
+     margin:8px;
+
+     border: 0;
+     outline: 0;
+   
+    
+}
+.avalia{
+    display: flex;
+    justify-content: center;
+      padding: 8px;
+      border: 3px solid black; /* Define a largura, estilo e cor da borda */
+      background-color:black;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      width: 40%;
+      height: 100%;
+      opacity: 0.9;
+}
+  
+.avaliacentral{
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    padding-top: 9%;
+   
+  
+}
+
+
+
+
+label{
+    margin: 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+}
+.entrada{
+    width: 150px;
+    margin:8px;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: none;
+    background-color:black;
+    opacity: 0.9;
+    color:white;
+
+}
+.estiloNota{
+    display: flex;
+    flex-direction: row;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+.botao > .botaoenviar{
+ 
+    background-color:gray;
+    color:white;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: point;
+    margin-bottom: 2%;
+    padding: 6px;
+    width: 45%;
+
+}
+
+h2{
+    text-align: center;
+    color:white;
+}
+label{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+fieldset{
+    color:blue;
+}
+.botaoenviar:hover{
+    background-color: red;
+
+}
+.escolha{
+    background-color: gray;
+    width: 16%;
+}

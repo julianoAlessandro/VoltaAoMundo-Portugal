@@ -3,46 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="EstiloAvalia.css">
+    <title></title>
 </head>
 <body>
-    <form action="avaliacao-gravar.php" method="post">
+  <div class="avaliacentral">
+  <div class="avalia">
+
+ 
+    <form action="ArquivosPHP/avaliacao-gravar.php" method="post">
+      <fieldset>
+      <div class="titulo">
         <h2>Avaliação do site para a sua melhoria futura</h2>
-        <label for="nome">Nome:</label><br>
-        <input type="text" name="nome"><br>
-        <label for="cidade">Cidade:</label><br>
-        <input type="text" name="cidade"><br>
+
+      </div>
+   
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" class="entrada"><br>
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade"  class="entrada"><br>
+        <label>Qual sua idade:</label>
+        <input type="text" name="idade"  class="entrada" ><br>
         <label>Informe seu Sexo:
             <input type="radio" name="sexo" value="Masculino">Masculino
           </label>
           <label>
             <input type="radio" name="sexo" value="Feminino">Feminino<br>
-          </label>
-          <label>Qual sua idade:</label>
-          <input type="text" name="idade" ><br>
-          <label>De uma nota para o nosso site de Zero até Cinco:<br>
-            <input type="radio" name="nota" value="0">0<br>
-          </label>
-          <label>
-            <input type="radio" name="nota" value="1">1<br>
-          </label>
-          <label>
-            <input type="radio" name="nota" value="2">2<br>
-          </label>
-          <label>
-            <input type="radio" name="nota" value="3">3<br>
-          </label>
-          <label>
-            <input type="radio" name="nota" value="4">4<br>
-          </label>
-          <label>
-            <input type="radio" name="nota" value="5">5<br>
-          </label>
-         <input type="submit" value="ENVIARAVALIAÇÃO">
+          </label><br>
+         
+          <label for="escolha">Selecione a nota que deseja dar ao nosso site:</label>
+          <select name="nota" id="nota" class="escolha">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+          </select><br><br>
+            <div class="botao">
+              <input type="submit" class="botaoenviar" value="ENVIAR">
+  
+            </div>
+          
+         
+    
+     
          
 
-
     </form>
-    
+  
+  </fieldset>
+  </div>
+
+        </div>
 </body>
 </html>
