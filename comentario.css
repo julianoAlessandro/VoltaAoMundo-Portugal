@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+th{
+    color:red;
+}
+.tabela{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}

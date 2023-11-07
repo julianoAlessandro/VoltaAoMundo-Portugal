@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="estilo">
+    <style>
+        .ajustar{
+        
+            display: flex;
+    flex-direction: row;
+        }
+        </style>
     <script type="text/javascript">
         google.charts.load("current", {packages: ['corechart']});
               google.charts.setOnLoadCallback(function () {
@@ -140,8 +148,10 @@
     <title>Document</title>
 </head>
 <body>
-<div id="columnchart_values" style="width: 900px; height: 300px;"></div><br><br><br><br><br><br>
+    <div class="ajustar">
+<div id="columnchart_values" style="width: 900px; height: 300px;"></div>
 <div id="grafico2" style="width: 900px; height: 300px;"></div>
-<div id="grafico3" style="width: 900px; height: 300px;"></div><br><br><br><br><br><br>
+    </div>
+    <div id="grafico3" style="width: 900px; height: 300px;"></div><br>
 </body>
 </html>
