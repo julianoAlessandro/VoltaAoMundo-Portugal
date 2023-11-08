@@ -25,13 +25,17 @@
 
 .conteudo2{
     display: flex;
-    justify-content: space-around;
+    justify-content:start;
     flex-direction: row-reverse;
     width: 100;
     height: 70;
     margin-top: 11px;
 
 
+
+}
+.conteudo2 > .subconteudo>.img{
+    margin-right: 18%;
 }
 .conteudoPrato{
     border: 3px solid black; /* Define a largura, estilo e cor da borda */
