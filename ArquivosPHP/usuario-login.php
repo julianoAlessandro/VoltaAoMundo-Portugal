@@ -1,5 +1,5 @@
 <?php
-require_once  'usuario-verifica.php';
+require_once 'usuario-verifica.php';
 
 $nome = $_POST['nome'];
 $senhaLimpa = $_POST['senha'];

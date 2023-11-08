@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="stylesheet" href="estilo">
     <style>
         .ajustar{
         
             display: flex;
-    flex-direction: row;
+
         }
      
         h1{
@@ -121,12 +122,14 @@
 </head>
 <body>
     <h1>Desempenho do Site Volta ao Mundo</h1>
+  <div class="row">
     <div class="ajustar">
-<div id="columnchart_values" style="width: 700px; height: 200px;"></div><br><br>
+<div id="columnchart_values" class="col-sm-3" style="width: 700px; height: 200px;"></div><br><br>
 <div id="grafico2" style="width: 700px; height: 300px;"></div><br><br><br>
     </div>
-    <div class="ajustar2">
-    <div id="grafico3" style="width: 900px; height: 200px;"></div><br>
+    <div class="ajustar">
+    <div id="grafico3" class="col-2 col-md-4"style="width: 700px; height: 200px;"></div><br>
     </div>
+ </div>
 </body>
 </html>
