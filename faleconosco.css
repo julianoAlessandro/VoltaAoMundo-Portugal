@@ -4,7 +4,7 @@
 }
 body{
      
-        background-image: url('img/BandeiraFinal.jpg');
+        background-image: url('img/fundo.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed; /* Isso faz a imagem de fundo ficar fixa ao rolar a página */
@@ -31,6 +31,10 @@ body{
 }
 label{
     color:white;
+}
+form{
+    background-color: black;
+    opacity: 0.9;
 }
 
 .botaoenviar{
@@ -60,10 +64,11 @@ h3{
 
 }
 fieldset{
-    background-color: black;
-    padding: 20px;
+    color:white;
     opacity: 0.9;
     margin: 22px;
+    border-radius: 6px;
+
 }
 .central2{
    
@@ -74,6 +79,13 @@ fieldset{
 .botaoenviar:hover{
     background-color: red;
 }
-form{
- padding: 20%;
+
+h3{
+    color:white;
+}
+.ajuste:hover{
+    background-color: red;
+    border-radius: 22px;
+    opacity: 0.8;
+
 }
