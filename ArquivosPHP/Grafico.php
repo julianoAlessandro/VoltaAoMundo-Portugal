@@ -11,6 +11,13 @@
             display: flex;
     flex-direction: row;
         }
+     
+        h1{
+            text-align: center;
+        }
+        body{
+            background-color: blue;
+        }
         </style>
     <script type="text/javascript">
         google.charts.load("current", {packages: ['corechart']});
@@ -32,6 +39,7 @@
                     $idade = $dados['idade'];
                     $nota = (int)$dados['nota'];
                     $data[] = array($idade, $nota);
+                  
                 }
             } else {
                 echo "console.error('Erro na conexão com o banco de dados.');";
@@ -42,7 +50,11 @@
                 ['Idade', 'Nota'],
                 <?php
                 foreach ($data as $row) {
-                    echo "['" . $row[0] . "', " . $row[1] . "],";
+                    $guardar = [$row]
+                    if $guardar == 2:
+
+                       echo "['" . $row[0] . "', " . $row[1] . "],";
+
                 }
                 ?>
             ]);
@@ -91,10 +103,11 @@
             var options = {
                 title: "Desempenho do site",
                 width: 600,
-                height: 200,
+                height: 400,
                 bar: {groupWidth: "91%"},
                 bars: 'vertical',
                 legend: { position: "rigth" },
+                
             };
 
             var chart = new google.visualization.BarChart(document.getElementById("grafico2"));
@@ -104,54 +117,19 @@
 
         //grafico3
 
-        function  drawChart3() {
-            <?php
-            $conexao = new PDO('mysql:host=127.0.0.1;dbname=loginportugal', 'root', '');
-
-            if ($conexao) {
-                $sql = "SELECT sexo, nota FROM avaliacao";
-                $stmt = $conexao->query($sql);
-                $SexoNota = array();
-
-                while ($dados = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                    $sexo= $dados['sexo'];
-                    $nota = (int)$dados['nota'];
-                    $SexoNota[] = array($sexo, $nota); 
-                }
-            } else {
-                echo "console.error('Erro na conexão com o banco de dados.');";
-            }
-            ?>
-
-            var data = google.visualization.arrayToDataTable([
-                ['Sexo', 'Nota'],
-                <?php
-                foreach ($SexoNota as $row) {
-                    echo "['" . $row[0] . "', " . $row[1] . "],";
-                }
-                ?>
-            ]);
-
-            var options = {
-                title: "Desempenho do site",
-                width: 600,
-                height: 200,
-                bar: {groupWidth: "91%"},
-                bars: 'vertical',
-                legend: { position: "rigth" },
-            };
-
-            var chart = new google.visualization.PieChart(document.getElementById("grafico3"));
-            chart.draw(data, options);
-        }
+        
+      
     </script>
     <title>Document</title>
 </head>
 <body>
+    <h1>Desempenho do Site Volta ao Mundo</h1>
     <div class="ajustar">
-<div id="columnchart_values" style="width: 900px; height: 300px;"></div>
-<div id="grafico2" style="width: 900px; height: 300px;"></div>
+<div id="columnchart_values" style="width: 700px; height: 200px;"></div><br><br>
+<div id="grafico2" style="width: 700px; height: 300px;"></div><br><br><br>
     </div>
-    <div id="grafico3" style="width: 900px; height: 300px;"></div><br>
+    <div class="ajustar2">
+    <div id="grafico3" style="width: 900px; height: 200px;"></div><br>
+    </div>
 </body>
 </html>

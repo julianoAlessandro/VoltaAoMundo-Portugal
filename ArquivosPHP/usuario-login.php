@@ -11,7 +11,6 @@ $resultado = $conexao ->prepare($sql);
 $resultado ->bindParam(':user', $nome);
 $resultado ->bindParam(':password', $password);
 $resultado ->execute();
-
 $linha = $resultado ->fetch();
 $usuario_logado = $linha['nome'];
 
@@ -21,7 +20,7 @@ if($usuario_logado == null)
 }
 else
 {
-    SESSION_START();
+    session_start();
     $_SESSION['nome'] = $usuario_logado;
     header('location:index2.php');
 }
