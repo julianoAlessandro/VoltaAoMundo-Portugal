@@ -31,7 +31,7 @@
             $conexao = new PDO('mysql:host=127.0.0.1;dbname=loginportugal', 'root', '');
 
             if ($conexao) {
-                $sql = "SELECT idade, nota FROM avaliacao";
+                $sql = "SELECT idade, AVG(nota) as nota FROM avaliacao GROUP BY idade";
                 $stmt = $conexao->query($sql);
                 $data = array();
 
@@ -50,10 +50,7 @@
                 ['Idade', 'Nota'],
                 <?php
                 foreach ($data as $row) {
-                    $guardar = [$row]
-                    if $guardar == 2:
-
-                       echo "['" . $row[0] . "', " . $row[1] . "],";
+                         echo "['" . $row[0] . "', " . $row[1] . "],";
 
                 }
                 ?>
@@ -77,7 +74,7 @@
             $conexao = new PDO('mysql:host=127.0.0.1;dbname=loginportugal', 'root', '');
 
             if ($conexao) {
-                $sql = "SELECT cidade, nota FROM avaliacao";
+                $sql = "SELECT cidade, AVG(nota) as nota FROM avaliacao GROUP BY cidade";
                 $stmt = $conexao->query($sql);
                 $cidadeNota = array();
 
