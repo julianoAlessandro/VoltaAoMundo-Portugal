@@ -3,15 +3,11 @@
     padding: 0;
 }
 body{
-
-    background-image: url('img/formulario.jpg'); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem de fundo */
+    background-image: url('img/fundo.jpg'); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem de fundo */
     background-size: cover; /* Faz a imagem cobrir todo o fundo */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
     background-attachment: fixed; /* Fixa a imagem de fundo para que ela não role com a página */
-    
-
-
-    
+   
 }
 
 .input{
@@ -26,12 +22,13 @@ body{
 .avalia{
     display: flex;
     justify-content: center;
+    align-items: cetner;
       padding: 8px;
       border: 3px solid black; /* Define a largura, estilo e cor da borda */
       background-color:black;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-      width: 40%;
-      height: 100%;
+      width: 70vw;
+      height: 60%;
       opacity: 0.9;
 }
   
@@ -39,9 +36,11 @@ body{
     
     display: flex;
     justify-content:center;
-    align-items: center;
+    align-items: start;
     width: 100%;
     padding-top: 9%;
+
+    
    
   
 }
@@ -95,9 +94,7 @@ label{
     color:white;
     font-family: Arial, Helvetica, sans-serif;
 }
-fieldset{
-    color:blue;
-}
+
 .botaoenviar:hover{
     background-color: red;
 
@@ -109,4 +106,12 @@ fieldset{
 .ajuste{
     width: 40px;
     height: 40px;
+}
+.titulo{
+    color:white;
+}
+
+.ajuste:hover{
+    background-color: red;
+    border-radius: 22px;
 }
