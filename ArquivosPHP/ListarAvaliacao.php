@@ -33,10 +33,10 @@ $listaAvaliacao = $avaliacao -> listar();
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
   <a class="navbar-brand" href="#"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class=" navbar-collapse" id="navbarToggleExternalContent">
     <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link  corAltera" href="Grafico.php">Desempenho do site</a>
