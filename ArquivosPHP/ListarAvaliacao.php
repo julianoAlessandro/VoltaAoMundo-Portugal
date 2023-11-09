@@ -10,29 +10,28 @@ $listaAvaliacao = $avaliacao -> listar();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/portugalredondo.png" type="image/x-icon">
+    <link rel="stylesheet" href="estiloAvaliador.css">
+    <title>Painel de Avaliações</title>
     <style>
-    <style>
-        body{
-            background-color: red;
+      .centralizar{
+       display: flex;
+       justify-content: center;
+       padding-top:3%;
+      }
+      body{
+        background-color:gray;
+      }
+      .corAltera{
+          color:gray;
         }
-        table{
-          
-        }
-        .tabela{
-         
-            width:100%;
-            display: flex;
-    justify-content: center;
-            
-        }
-        </style>
+   
 
 </style>
 </head>
-<body>
+<body class="containe-fluid">
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
   <a class="navbar-brand" href="#"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -40,23 +39,21 @@ $listaAvaliacao = $avaliacao -> listar();
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="Grafico.php">Desempenho do site</a>
+        <a class="nav-link  corAltera" href="Grafico.php">Desempenho do site</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="ListarAvaliacao.php">Tabela Avaliação</a>
+        <a class="nav-link  corAltera" href="ListarComentarios.php">ListarComentarios</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link  corAltera" href="usuario-logout.php"><img src="errado.png" width="30px"</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Sair</a>
-      </li>
+  
     </ul>
   </div>
 </nav>
 </header>
-<div class="tabela">
-    <table border="1" class=" table table-striped table-sm  table-dark w-50 p-3" >
+<div class="col-12 centralizar">
+    <table border="4" class=" table table-striped table-sm  table-dark w-50 p-3 col-12 tabela" >
         <tr>
             <th>Nome</th>
             <th>cidade</th>
