@@ -22,7 +22,7 @@ else
 {
     session_start();
     $_SESSION['nome'] = $usuario_logado;
-    header('location:index2.php');
+    header('location:ListarComentarios.php');
 }
 
 
