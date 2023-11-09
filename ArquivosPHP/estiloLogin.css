@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    background-image: url('./formulario.jpg'); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Fixa a imagem de fundo para que ela não role com a página */
+    
+
+}
+
+.entrada{
+    width: 70%;
+    margin:8px;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: none;
+    background-color:black;
+    opacity: 0.9;
+    color:white;
+    border-bottom: 1;
+    height: 10%;
+    margin-left: 11%;
+    border-bottom: 1;
+
+}
+fieldset{
+    color:white;
+}
+
+label{
+    color:white;
+}
+form{
+    background-color: black;
+    border-radius: 5px;
+    padding: 4%;
+    opacity: 0.9;
+    outline: none;
+}
+
+.botaoenviar{
+ 
+    background-color:gray;
+    color:white;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: point;
+    margin-bottom: 4%;
+    width: 54%;
+    position: relative;
+    left: 17%;
+    margin-top: 2%;
+
+
+}
+
+.centralizar{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+ 
+
+}
+h3{
+    color:white;
+}
+.botaoenviar:hover{
+    background-color: red;
+}
