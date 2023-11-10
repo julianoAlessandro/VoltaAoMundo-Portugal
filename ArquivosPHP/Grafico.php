@@ -1,3 +1,7 @@
+<?php
+require_once 'usuario-verifica.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -144,6 +148,7 @@
                 backgroundColor: 'black',
                 titleTextStyle: {
             color: 'white' // Defina a cor do texto do título como branco
+            
         }
                 
             };

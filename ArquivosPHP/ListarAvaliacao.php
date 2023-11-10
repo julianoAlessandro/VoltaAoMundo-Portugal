@@ -1,5 +1,5 @@
 <?php
-
+require_once 'usuario-verifica.php';
 require_once "classes/Avaliacao.php";
 $avaliacao = new Avaliacao();
 $listaAvaliacao = $avaliacao -> listar();

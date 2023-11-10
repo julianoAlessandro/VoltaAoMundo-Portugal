@@ -1,5 +1,5 @@
 <?php
-
+require_once 'usuario-verifica.php';
 require_once "classes/Comentario.php";
 $comentario = new Comentario();
 $listaComentarios = $comentario->listar();
