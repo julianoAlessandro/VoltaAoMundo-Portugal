@@ -8,7 +8,7 @@ try{
     $conexao = new PDO('mysql:host=127.0.0.1;dbname=loginportugal','root','');
     $conexao ->exec($sql);
     echo "<h3>Registro Gravado com sucesso!</h3>";
-    echo "<a href='LoginPortugal.php'>Fazer Login </a>";
+    echo "<a href='LoginPortugal.html'>Fazer Login </a>";
 
 }
 catch(Exception $erro){

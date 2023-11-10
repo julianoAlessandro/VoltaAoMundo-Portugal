@@ -73,8 +73,9 @@ $comentario = new Comentario($id_lugar);
     <form action="comentario-editar-gravar.php" method="POST">
         <h2>Altere o status do Comentario:</h2>
         <input type="hidden" name="id_lugar" value="<?= $comentario->id_lugar ?>">
-        <label for="ComentarioRespondido">Informe o nome do Autor:</label>
+        <label for="ComentarioRespondido">Defina O novo Status do Comentario:</label>
         <input class="inputs" type="text" name="ComentarioRespondido" value="<?= $comentario->ComentarioRespondido ?>">
+        
         <br><br>
     
 

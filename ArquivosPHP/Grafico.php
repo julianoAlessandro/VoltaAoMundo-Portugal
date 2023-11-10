@@ -38,6 +38,13 @@
     justify-content:center;
 
         }
+        
+   
+
+
+
+
+
         </style>
     <script type="text/javascript">
         google.charts.load("current", {packages: ['corechart']});
@@ -83,6 +90,13 @@
                 height: 300,
                 bar: {groupWidth: "95%"},
                 legend: { position: "Idade" },
+                colors: ['green'],
+                fontSize: 14,
+                backgroundColor: 'black',
+                titleTextStyle: {
+            color: 'white' // Defina a cor do texto do título como branco
+        }
+      
             };
 
             var chart = new google.visualization.LineChart(document.getElementById("columnchart_values"));
@@ -125,6 +139,12 @@
                 bar: {groupWidth: "91%"},
                 bars: 'vertical',
                 legend: { position: "rigth" },
+                colors: ['red'],
+                fontSize: 14,
+                backgroundColor: 'black',
+                titleTextStyle: {
+            color: 'white' // Defina a cor do texto do título como branco
+        }
                 
             };
 
@@ -166,10 +186,16 @@
 
             var options = {
                 title: "Notas por Sexo",
-                width: 290,
+                width: 490,
                 height: 200,
                 bar: {groupWidth: "95%"},
                 legend: { position: "Idade" },
+                colors: ['red', 'green'],
+                fontSize: 14,
+                backgroundColor: 'black',
+                titleTextStyle: {
+            color: 'white' // Defina a cor do texto do título como branco
+        }
           
             };
 
